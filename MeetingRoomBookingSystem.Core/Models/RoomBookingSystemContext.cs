@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using MeetingRoomBookingSystem.Core.Models.Auth;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace MeetingRoomBookingSystem.Core.Models;
 
-public partial class RoomBookingSystemContext : DbContext
+public partial class RoomBookingSystemContext : IdentityDbContext<User, Role, Guid>
 {
     public RoomBookingSystemContext()
     {
@@ -30,6 +32,7 @@ public partial class RoomBookingSystemContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<Company>(entity =>
         {
             entity.HasKey(e => e.CompanyId).HasName("PK__Company__AD54599045C5CAD3");

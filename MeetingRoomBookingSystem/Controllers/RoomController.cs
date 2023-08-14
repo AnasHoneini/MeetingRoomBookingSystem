@@ -3,12 +3,15 @@ using MeetingRoomBookingSystem.Core.Models;
 using MeetingRoomBookingSystem.Resourses;
 using MeetingRoomBookingSystem.Services.Interfaces;
 using MeetingRoomBookingSystem.Validators;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MeetingRoomBookingSystem.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
+    [Authorize]
     public class RoomController : ControllerBase
 
     {

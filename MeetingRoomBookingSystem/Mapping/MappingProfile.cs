@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MeetingRoomBookingSystem.Core.Models;
+using MeetingRoomBookingSystem.Core.Models.Auth;
 using MeetingRoomBookingSystem.Resourses;
 
 namespace MeetingRoomBookingSystem.Mapping
@@ -8,6 +9,10 @@ namespace MeetingRoomBookingSystem.Mapping
     {
         public MappingProfile()
         {
+
+            CreateMap<UserSignUpResource, User>()
+            .ForMember(u => u.UserName, opt => opt.MapFrom(ur => ur.Email));
+
             // Domain to Resource
             CreateMap<Company, CompanyResourses>();
             CreateMap<Employee, EmployeeResourses>();
