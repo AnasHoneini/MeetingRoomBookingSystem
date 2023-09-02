@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ANH</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/admin-login.css">
+
+</head>
+
+<body>
+
+	<header class="banner">
+		
+		<nav class="navigation" id="panelOne">
+			
+			<a href="homepage.html"><span id="home">Home</span></a>
+			<a href="homepage.html#about-section"><span id="about">About</span></a>
+			<a href="homepage.html#gallery-section"><span id="gallery">Gallery</span></a>
+			<a href="homepage.html#review-section"><span id="review">Guest Reviews</span></a>
+			<a href="homepage.html#contact-section"><span id="contact">Contact</span></a>
+			<div class="dropdown">
+				<button class="dropbtn">Login</button>
+				<div class="dropdown-content">
+					<a href="admin-login.html">Login as Admin</a>
+					<a href="employee-login.html">Login as Employee</a>
+				</div>
+			</div>
+
+		</nav>
+
+	
+		</nav>
+
+	</header>
+
+	<div class="form_a" id="form1">
+        <h2 class="sign-in-header">Log in as Admin</h2>
+        <form class="main_form" method="post">
+          <input
+            type="email"
+            class="form_input"
+            placeholder="E-mail address"
+            name="email"
+          />
+          <small class="user-entry-error hide" id="email-error"></small>
+          <input
+            type="password"
+            class="form_input"
+            placeholder="Password"
+            name="password"
+          />
+          <small class="user-entry-error hide" id="passwd-error"></small>
+          <small class="user-entry-error hide" id="passwd-constraints">
+            * password should be at least 8 characters in length,<br />& must
+            contain atleast 1 of each -
+            <ul>
+              <li>lowercase alphabet,</li>
+              <li>uppercase alphabet,</li>
+              <li>number, &</li>
+              <li>special character</li>
+            </ul>
+          </small>
+          <p id="t_c">
+            By signing in, you agree to the Space Reserve
+            Terms and Conditions and Privacy Statement.
+          </p>
+          <input type="submit" class="form_btn" value="Continue" />
+        </form>
+      </div>
+
+	
+
+	<script type="text/javascript" src="../js/admin-login.js"></script>
+	
+</body>
+
+</html>

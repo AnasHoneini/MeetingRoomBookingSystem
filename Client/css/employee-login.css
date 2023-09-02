@@ -1,0 +1,284 @@
+/*Google Font.*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+	background: #EAF0F1;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+/* Banner */
+.navigation{
+	width: 100%;
+	height: 2em;
+	background: #333945;
+	padding: 1.5em 2em 0.5em 2em;
+	display: grid;
+	grid: 20px / auto auto auto auto auto auto;
+}
+
+.sticky{  /* Scroll Effect Class. */
+	width: 100%;
+	position: fixed;
+	height: 2em;
+	background: #333945;
+	padding: 1.5em 0em 0.5em 0em;
+	display: grid;
+	grid: 20px / auto auto auto auto auto auto;
+	opacity: 0.95;
+}
+
+.navBar i, .navBar a, #bar{
+	display: none;
+}
+
+#panelTwo{
+	display: none;
+}
+
+#home, #contact, #about, #gallery, #review, #book{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	font-size: 1em;
+	letter-spacing: 0.25em;
+	background-color: #333945;
+	color: #EAF0F1;
+}
+
+#book{
+	border-style: solid;
+	border-color: #fff;
+	padding: 0.5em 2em;
+	transition: all 0.5s;
+}
+
+#book:hover{
+	background: #fff;
+	color: #000;
+}
+
+#home:hover, #contact:hover, #about:hover, #gallery:hover, #review:hover{
+	color: #758AA2;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: fixed; /* Set to fixed position */
+    top: 1em; /* Adjust this value to position it vertically */
+    right: 2em; /* Adjust this value to position it horizontally */
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #333945;
+    color: #EAF0F1;
+    padding: 0.5em 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    letter-spacing: 0.25em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333945;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: #EAF0F1;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #758AA2;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 900px) {
+    /* Adjust dropdown styles for smaller screens */
+    .dropdown-content {
+        min-width: 100%;
+        left: 0;
+    }
+    .dropdown-content a {
+        padding: 0.5em 1em;
+    }
+}
+
+
+a{
+	text-decoration: none;
+	background-color: #333945;
+}
+
+:root {
+  --brandOrangeLight: rgb(254, 165, 142);
+  --brandOrange: rgb(255, 75, 30);
+  --brandOrangeDark: rgb(213, 42, 0);
+  --brandSupport: rgb(255, 187, 30);
+  --brandSupportLight: rgb(255, 238, 198);
+  --black: rgb(61, 61, 61);
+  --offWhite: rgba(61, 61, 61, 0.25);
+  --modeColor: white;
+  --red: rgb(231, 76, 60);
+  --green: rgb(3, 170, 0);
+}
+
+h2 {
+  font-weight: 400;
+  padding: 1.5rem 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.form_a {
+  height: 70vh;
+  max-width: 45rem;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  margin-top: 1.5rem;
+}
+
+.main_form {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.form_input {
+  border: 1px solid var(--offWhite);
+  border-radius: 0.5rem;
+  display: block;
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.form_btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--brandOrange);
+  color: var(--modeColor);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.form_btn:hover {
+  background: var(--brandOrangeDark);
+}
+
+.toggle_page:hover,
+#t_c a:hover {
+  text-decoration: underline;
+}
+
+.form_a p {
+  margin: 1rem 0;
+}
+
+.form_a span {
+  margin-left: 26%;
+}
+
+#t_c,
+#t_c a {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sign-in-header,
+.sign-up-header {
+  font-family: "Lora", serif;
+  font-size: 2.5rem;
+}
+
+.invalid-input {
+  border: 2px solid var(--red) !important;
+}
+
+.user-entry-error {
+  color: var(--red);
+  font-size: 1.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+input[type="submit"]:disabled {
+  background-color: var(--offWhite);
+}
+
+#passwd-constraints {
+  line-height: 2rem;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+#passwd-constraints > ul {
+  display: block;
+  list-style-type: disc;
+  margin-left: 2.75rem;
+}
+
+#passwd-constraints > ul > li {
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 850px) {
+
+  .form_a {
+    width: 80%;
+  }
+
+  .form_input {
+    font-size: 2rem;
+    height: 4rem;
+    margin: 1rem 0;
+  }
+
+  #t_c {
+    font-size: 2rem;
+  }
+
+  .form_btn {
+    height: 4rem;
+    font-size: 20rem;
+    margin: 2rem;
+  }
+
+  #sign_ask {
+    margin-left: 18%;
+  }
+}
+

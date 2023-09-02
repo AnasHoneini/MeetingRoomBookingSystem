@@ -96,7 +96,7 @@ a{
 .cover{
 	background: url(../Images/cover.jpg) no-repeat center;
 	background-size: cover;
-	max-width: 65%;
+	max-width:76%;
 	height: 30em;
 	top: 70%;
 }
@@ -509,6 +509,70 @@ a{
 	}
 
 }
+/* Dropdown container */
+.dropdown {
+    position: fixed; /* Set to fixed position */
+    top: 1em; /* Adjust this value to position it vertically */
+    right: 2em; /* Adjust this value to position it horizontally */
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #333945;
+    color: #EAF0F1;
+    padding: 0.5em 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    letter-spacing: 0.25em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333945;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: #EAF0F1;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #758AA2;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 900px) {
+    /* Adjust dropdown styles for smaller screens */
+    .dropdown-content {
+        min-width: 100%;
+        left: 0;
+    }
+    .dropdown-content a {
+        padding: 0.5em 1em;
+    }
+}
+
 
 @media screen and (max-width: 480px) {
 
