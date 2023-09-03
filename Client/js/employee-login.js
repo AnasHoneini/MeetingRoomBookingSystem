@@ -28,8 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
   
           if (matchingEmployee) {
-            // User email and password match, redirect to the dashboard
-            window.location.href = "companies.html"; // Replace with the actual URL
+            window.location.href = "employeeDashboard.html"; 
           } else {
             // Credentials are incorrect
             handleAuthenticationError();

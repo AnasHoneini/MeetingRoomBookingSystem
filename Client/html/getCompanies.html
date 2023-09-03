@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpaceReserve</title>
+    <link rel="stylesheet" type="text/css" href="../css/getCompanies.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="banner">
+      <nav class="navigation" id="panelOne">
+        <a href="./getCompanies.html"><span id="home">Get Companies</span></a>
+        <a href="./addComapnies.html"><span id="about">Add Companies</span></a>
+        <a href="#"><span id="gallery">Update Companies</span></a>
+        <a href="#"><span id="review">Delete Companies</span></a>
+        <a href="#"><span id="contact">Signout</span></a>
+      </nav>
+    </header>
+    <section>
+    <br>
+
+    <button id="fetch-companies">Fetch Companies</button>
+    
+    <table id="company-table">
+        <thead>
+            <tr id="table-row">
+                <th id="col-1">Company ID</th>
+                <th id="col-2">Name</th>
+                <th id="col-3">Description</th>
+                <th id="col-4">Email Address</th>
+                <th id="col-5">Logo</th>
+                <th id="col-5">Active</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </section>
+    <script src="../js/getCompanies.js"></script>
+</body>
+</html>
