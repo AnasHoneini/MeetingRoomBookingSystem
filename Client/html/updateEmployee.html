@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpaceReserve - Update Employee</title>
+    <link rel="stylesheet" type="text/css" href="../css/updateEmployee.css" />
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous"
+    />
+</head>
+<body>
+<header class="banner">
+    <nav class="navigation" id="panelOne">
+        <a href="./getEmployees.html"><span id="home">Get Employees</span></a>
+        <a href="./addEmployees.html"><span id="about">Add Employees</span></a>
+        <a href="./updateEmployees.html"><span id="gallery">Update Employees</span></a>
+        <a href="./deleteEmployee.html"><span id="review">Delete Employees</span></a>
+        <a href="./employeeDashboard.html"><span id="contact">Dashboard</span></a>
+    </nav>
+</header>
+<section>
+    <br>
+    <h2>Update Employee</h2>
+    <br>
+    <form id="update-employee-form">
+        <div class="form-group">
+            <label for="employee-id">Employee ID:</label>
+            <input type="text" id="employee-id" name="employee-id" required>
+        </div>
+        <div class="form-group">
+            <label for="employee-name">Name:</label>
+            <input type="text" id="employee-name" name="employee-name" required>
+        </div>
+        <div class="form-group">
+            <label for="employee-date-of-birth">Date of Birth:</label>
+            <input type="datetime-local" id="employee-date-of-birth" name="employee-date-of-birth" required>
+        </div>
+        <div class="form-group">
+            <label for="employee-gender">Gender:</label>
+            <input type="text" id="employee-gender" name="employee-gender" required>
+        </div>
+        <div class="form-group">
+            <label for="employee-email">Email Address:</label>
+            <input type="email" id="employee-email" name="employee-email" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="employee-role">Role:</label>
+            <input type="text" id="employee-role" name="employee-role" required>
+        </div>
+        <div class="form-group">
+            <label for="employee-company-id">Company ID:</label>
+            <input type="text" id="employee-company-id" name="employee-company-id" required>
+        </div>
+        <button type="submit">Update</button>
+    </form>
+</section>
+<script src="../js/updateEmployee.js"></script>
+</body>
+</html>

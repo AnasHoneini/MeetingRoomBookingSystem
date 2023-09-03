@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>SpaceReserve - Delete Company</title>
+    <link rel="stylesheet" type="text/css" href="../css/deleteComapnies.css"/>
+    <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+    />
+</head>
+<body>
+<header class="banner">
+    <nav class="navigation" id="panelOne">
+        <a href="./getCompanies.html"><span id="home">Get Companies</span></a>
+        <a href="./addCompanies.html"><span id="about">Add Companies</span></a>
+        <a href="./updateCompanies.html"><span id="gallery">Update Companies</span></a>
+        <a href="./deleteCompany.html"><span id="review">Delete Company</span></a>
+        <a href="./companiesDashboard.html"><span id="contact">Dashboard</span></a>
+    </nav>
+</header>
+<section>
+    <br/>
+    <h2>Delete Company</h2>
+    <br/>
+    <form id="delete-company-form">
+        <div class="form-group">
+            <label for="company-id">Company ID:</label>
+            <input type="text" id="company-id" name="company-id" required>
+        </div>
+        <br>
+        <button type="submit">Delete</button>
+    </form>
+</section>
+<script src="../js/deleteComapnies.js"></script>
+</body>
+</html>

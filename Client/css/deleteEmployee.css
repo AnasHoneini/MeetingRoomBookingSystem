@@ -4,99 +4,40 @@
     margin: 0 auto;
     padding: 0 auto;
 }
-
-h2 {
-  text-align: center;
-}
-.form-group {
-  margin-bottom: 15px;
-}
-
-form {
-  background: #eaf0f1;
-  width: 80%;
-  border: 1px solid #ddd;
-  padding: 20px;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #555;
-}
-input {
-    padding: 5px;
-    margin-bottom: 10px;
+table {
+    width: 90%;
     border: 1px solid #ddd;
-    border-radius: 4px;
-}
-.action-buttons {
-  display: flex;
-  justify-content: space-between;
 }
 
-section {
-  margin: 20px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.update-button, .delete-button {
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
+thead{
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-weight: bold;
+th, td {
+    text-align: center;
+    padding: 8px;
 }
 
-/* Styles for form input fields in the modal */
-.modal-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+th {
+    background-color: #f2f2f2;
 }
 
-/* Styles for the update button in the modal */
-.update-button-modal {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form{
+    margin: 10px;
+}
+
+h2{
+    margin: 10px;
 }
 
 
-.update-button {
-  background-color: #4CAF50;
-  color: #fff;
-}
-
-.delete-button {
-  background-color: #f44336;
-  color: #fff;
-}
 .navigation{
 	width: 100%;
 	height: 2em;
@@ -106,23 +47,10 @@ section {
 	grid: 20px / auto auto auto auto auto auto;
 }
 
-#employee-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+#fetch-companies{
+    margin-left: 5%;
+    margin-bottom: 30px;
 }
-
-#employee-table th, #employee-table td {
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: left;
-}
-
-#employee-table th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
 
 .navBar i, .navBar a, #bar{
 	display: none;

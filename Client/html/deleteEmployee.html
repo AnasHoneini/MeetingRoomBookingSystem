@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>SpaceReserve - Delete Employee</title>
+    <link rel="stylesheet" type="text/css" href="../css/deleteEmployee.css"/>
+    <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+    />
+</head>
+<body>
+<header class="banner">
+    <nav class="navigation" id="panelOne">
+        <a href="./getEmployees.html"><span id="home">Get Employee</span></a>
+        <a href="./addEmployees.html"><span id="about">Add Employee</span></a>
+        <a href="./updateEmployee.html"><span id="gallery">Update Employee</span></a>
+        <a href="./deleteEmployee.html"><span id="review">Delete employee</span></a>
+        <a href="./employeeDashboard.html"><span id="contact">Dashboard</span></a>
+    </nav>
+</header>
+<section>
+    <br/>
+    <h2>Delete Employee</h2>
+    <br/>
+    <form id="delete-employee-form">
+        <div class="form-group">
+            <label for="employee-id">Employee ID:</label>
+            <input type="text" id="employee-id" name="employee-id" required>
+        </div>
+        <br>
+        <button type="submit">Delete</button>
+    </form>
+</section>
+<script src="../js/deleteEmployee.js"></script>
+</body>
+</html>
