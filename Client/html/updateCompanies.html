@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SpaceReserve</title>
-    <link rel="stylesheet" type="text/css" href="../css/addComapnies.css" />
+    <title>SpaceReserve - Update Companies</title>
+    <link rel="stylesheet" type="text/css" href="../css/updateCompanies.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -19,14 +19,17 @@
         <a href="./addComapnies.html"><span id="about">Add Companies</span></a>
         <a href="./updateCompanies.html"><span id="gallery">Update Companies</span></a>
         <a href="#"><span id="review">Delete Companies</span></a>
-        <a href="./companiesDashboard.html"><span id="contact">Dashboard</span></a>
-      </nav>
+        <a href="./companiesDashboard.html"><span id="contact">Dashboard</span></a>      </nav>
     </header>
     <section>
-    <br>
-    <h1>Create Company</h1>
-    <br>
-<form id="update-company-form">
+      <br>
+      <h2>Update Company</h2>
+      <br>
+      <form id="update-company-form">
+        <div class="form-group">
+          <label for="company-id">Company ID:</label>
+          <input type="text" id="company-id" name="company-id" required>
+        </div>
         <div class="form-group">
           <label for="company-name">Name:</label>
           <input type="text" id="company-name" name="company-name" required>
@@ -49,8 +52,7 @@
         </div>
         <button type="submit">Update</button>
       </form>
-</section>
-
-    <script src="../js/addComapnies.js"></script>
-</body>
+    </section>
+    <script src="../js/updateCompanies.js"></script>
+  </body>
 </html>

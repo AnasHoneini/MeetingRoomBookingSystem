@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SpaceReserve</title>
-    <link rel="stylesheet" type="text/css" href="../css/getCompanies.css" />
+    <link rel="stylesheet" type="text/css" href="../css/getEmployees.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -15,13 +15,11 @@
   <body>
     <header class="banner">
       <nav class="navigation" id="panelOne">
-        <a href="./getCompanies.html"><span id="home">Get Companies</span></a>
-        <a href="./addComapnies.html"><span id="about">Add Companies</span></a>
-        <a href="./updateCompanies.html">
-          <span id="gallery">Update Companies</span>
-        </a>
-        <a href="#"><span id="review">Delete Companies</span></a>
-        <a href="./companiesDashboard.html">
+        <a href="./getEmployees.html"><span id="home">Get Employees</span></a>
+        <a href="./addEmployees.html"><span id="about">Add Employees</span></a>
+        <a href="#"><span id="gallery">Update Employees</span></a>
+        <a href="#"><span id="review">Delete Employees</span></a>
+        <a href="./employeeDashboard.html">
           <span id="contact">Dashboard</span>
         </a>
       </nav>
@@ -29,22 +27,23 @@
     <section>
       <br />
 
-      <button id="fetch-companies">Fetch Companies</button>
+      <button id="fetch-employees">Fetch Employees</button>
 
-      <table id="company-table">
+      <table id="employee-table">
         <thead>
           <tr id="table-row">
-            <th id="col-1">Company ID</th>
+            <th id="col-1">Employee ID</th>
             <th id="col-2">Name</th>
-            <th id="col-3">Description</th>
-            <th id="col-4">Email Address</th>
-            <th id="col-5">Logo</th>
-            <th id="col-5">Active</th>
+            <th id="col-3">Date Of Birth</th>
+            <th id="col-4">Gender</th>
+            <th id="col-5">Email</th>
+            <th id="col-5">Role</th>
+            <th id="col-5">Company ID</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
     </section>
-    <script src="../js/getCompanies.js"></script>
+    <script src="../js/getEmployees.js"></script>
   </body>
 </html>

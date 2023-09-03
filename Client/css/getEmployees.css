@@ -1,123 +1,103 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-* {
-  margin: 0 auto;
-  padding: 0 auto;
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+table {
+    width: 90%;
+    border: 1px solid #ddd;
 }
 
-h1 {
-  text-align: center;
-}
-section {
-  margin: 20px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+thead{
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-form {
-  background: #eaf0f1;
-  width: 80%;
-  border: 1px solid #ddd;
-  padding: 20px;
+th, td {
+    text-align: center;
+    padding: 8px;
 }
 
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.form-group {
-  flex-direction: column;
-  margin-bottom: 15px;
+th {
+    background-color: #f2f2f2;
 }
 
-.form-group label {
-  font-weight: bold;
-  margin-bottom: 5px;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-input {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+
+.navigation{
+	width: 100%;
+	height: 2em;
+	background: #333945;
+	padding: 1.5em 0em 0.5em 0em;
+	display: grid;
+	grid: 20px / auto auto auto auto auto auto;
 }
 
-.navigation {
-  width: 100%;
-  height: 2em;
-  background: #333945;
-  padding: 1.5em 0em 0.5em 0em;
-  display: grid;
-  grid: 20px / auto auto auto auto auto auto;
+#fetch-employees{
+    margin-left: 5%;
+    margin-bottom: 30px;
 }
 
-.navBar i,
-.navBar a,
-#bar {
-  display: none;
+.navBar i, .navBar a, #bar{
+	display: none;
 }
 
-#panelTwo {
-  display: none;
+#panelTwo{
+	display: none;
 }
 
-#home,
-#contact,
-#about,
-#gallery,
-#review,
-#book {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: lighter;
-  font-size: 1em;
-  letter-spacing: 0.25em;
-  background-color: #333945;
-  color: #eaf0f1;
+#home, #contact, #about, #gallery, #review, #book{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	font-size: 1em;
+	letter-spacing: 0.25em;
+	background-color: #333945;
+	color: #EAF0F1;
 }
 
-.business {
-  padding: 3em 0em;
-  text-align: center;
+.business{
+	padding: 3em 0em;
+	text-align: center;
 }
 
-#negi {
-  font-family: 'Indie Flower', cursive;
-  font-size: 4em;
-  letter-spacing: 0.25em;
-  margin-bottom: 0.25em;
+#negi{
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+	letter-spacing: 0.25em;
+	margin-bottom: 0.25em;
 }
 
-#rent {
-  display: inline;
-  font-family: 'Indie Flower', cursive;
-  font-size: 2em;
+#rent{
+	display: inline;
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
 }
 
-#book {
-  border-style: solid;
-  border-color: #fff;
-  padding: 0.5em 2em;
-  transition: all 0.5s;
+#book{
+	border-style: solid;
+	border-color: #fff;
+	padding: 0.5em 2em;
+	transition: all 0.5s;
 }
 
-#book:hover {
-  background: #fff;
-  color: #000;
+#book:hover{
+	background: #fff;
+	color: #000;
 }
 
-#home:hover,
-#contact:hover,
-#about:hover,
-#gallery:hover,
-#review:hover {
-  color: #758aa2;
+#home:hover, #contact:hover, #about:hover, #gallery:hover, #review:hover{
+	color: #758AA2;
 }
 
-a {
-  text-decoration: none;
-  background-color: #333945;
+a{
+	text-decoration: none;
+	background-color: #333945;
 }
 
 .ag-format-container {
@@ -141,7 +121,7 @@ a {
 .ag-courses-item_link {
   display: block;
   padding: 30px 40px;
-  color: #eaf0f1;
+  color: #EAF0F1;
   background-color: #333945;
   overflow: hidden;
   position: relative;
@@ -164,7 +144,7 @@ a {
   font-size: 30px;
   z-index: 2;
   position: relative;
-  background-color: #333945;
+background-color: #333945;
 }
 
 .ag-courses-item_date-box {
@@ -172,7 +152,7 @@ a {
   color: #fff;
   z-index: 2;
   position: relative;
-  background-color: #333945;
+	background-color: #333945;
 }
 
 .ag-courses-item_date {
@@ -243,25 +223,4 @@ a {
   .ag-courses-item_date-box {
     font-size: 16px;
   }
-}
-input[type='text'],
-input[type='email'],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #555;
 }

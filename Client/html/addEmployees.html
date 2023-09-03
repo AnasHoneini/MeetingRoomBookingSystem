@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpaceReserve</title>
+    <link rel="stylesheet" type="text/css" href="../css/addEmployees.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="banner">
+      <nav class="navigation" id="panelOne">
+        <a href="./getEmployees.html"><span id="home">Get Employees</span></a>
+        <a href="./addEmployees.html"><span id="about">Add Employees</span></a>
+        <a href="#"><span id="gallery">Update Employees</span></a>
+        <a href="#"><span id="review">Delete Employees</span></a>
+        <a href="./employeeDashboard.html">
+          <span id="contact">Dashboard</span>
+        </a>
+      </nav>
+    </header>
+    <section>
+      <br />
+      <h1>Create Employee</h1>
+      <form id="employee-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="text" id="logo" name="dateOfBirth" required />
+        <br />
+        <label for="gender">Gender:</label>
+        <input type="text" id="companyDescription" name="gender" required />
+        <br />
+        <label for="emailAddress">Email:</label>
+        <input type="email" id="emailAddress" name="email" required />
+        <br />
+        <label for="role">Role:</label>
+        <input type="text" id="logo" name="role" required />
+        <br />
+        <label for="companyId">Company:</label>
+        <input type="text" id="active" name="companyId" required />
+        <br />
+        <button type="submit">Create</button>
+      </form>
+    </section>
+
+    <script src="../js/addEmployees.js"></script>
+  </body>
+</html>
