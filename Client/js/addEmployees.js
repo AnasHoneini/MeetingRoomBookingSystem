@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const employeeDateOfBirth = document.getElementById("employee-date-of-birth").value;
         const employeeGender = document.getElementById("employee-gender").value;
         const employeeEmail = document.getElementById("employee-email").value;
+        const employeePassword = document.getElementById("employee-password").value;
         const employeeRole = document.getElementById("employee-role").value;
         const employeeCompanyId = document.getElementById("employee-company-id").value;
 
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dateOfBirth: employeeDateOfBirth,
             gender: employeeGender,
             email: employeeEmail,
+            password: employeePassword,
             role: employeeRole,
             companyId: employeeCompanyId,
         };

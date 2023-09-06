@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td>${employee.dateOfBirth}</td>
                     <td>${employee.gender}</td>
                     <td>${employee.email}</td>
+                    <td>${employee.password}</td>
                     <td>${employee.role}</td>
                     <td>${employee.companyId}</td>
                 `;
