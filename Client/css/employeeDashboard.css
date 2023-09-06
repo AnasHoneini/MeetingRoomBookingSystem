@@ -15,6 +15,15 @@
 	grid: 20px / auto auto auto auto auto auto;
 }
 
+#contact {
+  display: inline-block;
+  padding: 2px 20px; /* Adjust padding as needed */
+  color: #fff; /* Set your desired text color */
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
 
 
 .navBar i, .navBar a, #bar{

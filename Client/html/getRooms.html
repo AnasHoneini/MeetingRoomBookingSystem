@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpaceReserve</title>
+    <link rel="stylesheet" type="text/css" href="../css/getRooms.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="banner">
+      <nav class="navigation" id="panelOne">
+        <a href="./getRooms.html"><span id="home">Get Rooms</span></a>
+        <a href="./addRooms.html"><span id="about">Add Rooms</span></a>
+        <a href="./updateRooms.html">
+          <span id="gallery">Update Rooms</span>
+        </a>
+        <a href="./deleteRooms.html"><span id="review">Delete Rooms</span></a>
+        <a href="./roomsDashboard.html">
+          <span id="contact">Dashboard</span>
+        </a>
+      </nav>
+    </header>
+    <section>
+      <br />
+
+      <button id="fetch-rooms">Fetch Rooms</button>
+
+      <table id="room-table">
+        <thead>
+          <tr id="table-row">
+            <th id="col-1">Room ID</th>
+            <th id="col-2">Name</th>
+            <th id="col-3">Location</th>
+            <th id="col-4">Capacity</th>
+            <th id="col-5">Description</th>
+            <th id="col-5">Company ID</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <script src="../js/getRooms.js"></script>
+  </body>
+</html>

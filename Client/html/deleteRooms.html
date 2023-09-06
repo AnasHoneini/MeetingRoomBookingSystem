@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>SpaceReserve - Delete Room</title>
+    <link rel="stylesheet" type="text/css" href="../css/deleteRooms.css"/>
+    <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+    />
+</head>
+<body>
+<header class="banner">
+    <nav class="navigation" id="panelOne">
+        <a href="./getRooms.html"><span id="home">Get Room</span></a>
+        <a href="./addRooms.html"><span id="about">Add Room</span></a>
+        <a href="./updateRooms.html"><span id="gallery">Update Room</span></a>
+        <a href="./deleteRooms.html"><span id="review">Delete Room</span></a>
+        <a href="./roomsDashboard.html"><span id="contact">Dashboard</span></a>
+    </nav>
+</header>
+<section>
+    <br/>
+    <h2>Delete Room</h2>
+    <br/>
+    <form id="delete-room-form">
+        <div class="form-group">
+            <label for="room-id">Room ID:</label>
+            <input type="text" id="room-id" name="room-id" required>
+        </div>
+        <br>
+        <button type="submit">Delete</button>
+    </form>
+</section>
+<script src="../js/deleteRooms.js"></script>
+</body>
+</html>

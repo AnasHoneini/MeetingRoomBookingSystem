@@ -1,10 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 *{
-	background: #EAF0F1;
-	margin: 0 auto;
-	padding: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
 }
+table {
+    width: 90%;
+    border: 1px solid #ddd;
+}
+
+thead{
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form{
+    margin: 10px;
+}
+
+h2{
+    margin: 10px;
+}
+
 
 .navigation{
 	width: 100%;
@@ -14,17 +46,11 @@
 	display: grid;
 	grid: 20px / auto auto auto auto auto auto;
 }
-#contact {
-  display: inline-block;
-  padding: 2px 20px; /* Adjust padding as needed */
-  color: #fff; /* Set your desired text color */
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
+
+#fetch-rooms{
+    margin-left: 5%;
+    margin-bottom: 30px;
 }
-
-
 
 .navBar i, .navBar a, #bar{
 	display: none;

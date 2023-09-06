@@ -1,11 +1,102 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 *{
-	background: #EAF0F1;
-	margin: 0 auto;
-	padding: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
+h2 {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+form {
+  background: #eaf0f1;
+  width: 80%;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.update-button, .delete-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Styles for form input fields in the modal */
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles for the update button in the modal */
+.update-button-modal {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.update-button {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: #fff;
+}
 .navigation{
 	width: 100%;
 	height: 2em;
@@ -14,16 +105,23 @@
 	display: grid;
 	grid: 20px / auto auto auto auto auto auto;
 }
-#contact {
-  display: inline-block;
-  padding: 2px 20px; /* Adjust padding as needed */
-  color: #fff; /* Set your desired text color */
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
+
+#room-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
+#room-table th, #room-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#room-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
 
 
 .navBar i, .navBar a, #bar{
