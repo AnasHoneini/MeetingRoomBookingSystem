@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+form {
+  background: #eaf0f1;
+  width: 80%;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.update-button, .delete-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Styles for form input fields in the modal */
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles for the update button in the modal */
+.update-button-modal {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.update-button {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: #fff;
+}
+.navigation{
+	width: 100%;
+	height: 2em;
+	background: #333945;
+	padding: 1.5em 0em 0.5em 0em;
+	display: grid;
+	grid: 20px / auto auto auto auto auto auto;
+}
+
+#reservation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#reservation-table th, #reservation-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#reservation-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+
+
+#home, #contact, #about, #gallery, #review, #book{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	font-size: 1em;
+	letter-spacing: 0.25em;
+	background-color: #333945;
+	color: #EAF0F1;
+  text-align: center;
+
+}
+
+.business{
+	padding: 3em 0em;
+	text-align: center;
+}
+
+#negi{
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+	letter-spacing: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+#rent{
+	display: inline;
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+}
+
+#book{
+	border-style: solid;
+	border-color: #fff;
+	padding: 0.5em 2em;
+	transition: all 0.5s;
+}
+
+#book:hover{
+	background: #fff;
+	color: #000;
+}
+
+#home:hover, #contact:hover, #about:hover, #gallery:hover, #review:hover{
+	color: #758AA2;
+}
+
+a{
+	text-decoration: none;
+	background-color: #333945;
+}
+
+.ag-format-container {
+  width: 1145px;
+}
+
+.ag-courses_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.ag-courses_item {
+  flex-basis: calc(50% - 30px);
+  margin: 0 0 30px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 40px;
+  color: #EAF0F1;
+  background-color: #333945;
+  overflow: hidden;
+  position: relative;
+}
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  color: #fff;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  transform: scale(10);
+}
+
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
+  z-index: 2;
+  position: relative;
+background-color: #333945;
+}
+
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+	background-color: #333945;
+}
+
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+  transition: color 0.5s ease;
+}
+
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}

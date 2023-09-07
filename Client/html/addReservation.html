@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpaceReserve</title>
+    <link rel="stylesheet" type="text/css" href="../css/addReservation.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="banner">
+      <nav class="navigation" id="panelOne">
+        <a href="./getReservation.html"><span id="home">Get Reservations</span></a>
+        <a href="./addReservation.html"><span id="about">Add Reservations</span></a>
+        <a href="./updateReservation.html"><span id="gallery">Update Reservations</span></a>
+        <a href="./deleteReservation.html"><span id="review">Delete Reservations</span></a>
+        <a href="./reservationDashboard.html">
+          <span id="contact">Dashboard</span>
+        </a>
+      </nav>
+    </header>
+    <section>
+      <br />
+      <h2>Create Reservation</h2>
+      <br>
+      <form id="create-reservation-form">
+        <div class="form-group">
+          <label for="reservation-name">Name:</label>
+          <input type="text" id="reservation-name" name="reservation-name" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-date">Date:</label>
+          <input type="datetime-local" id="reservation-date" name="reservation-date" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-start-time">Start Time:</label>
+          <input type="datetime-local" id="reservation-start-time" name="reservation-start-time" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-end-time">End Time:</label>
+          <input type="datetime-local" id="reservation-end-time" name="reservation-end-time" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-attendees">Number of Attendees:</label>
+          <input type="number" id="reservation-attendees" name="reservation-attendees" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-status">Status:</label>
+          <input type="text" id="reservation-status" name="reservation-status" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-room-id">Room ID:</label>
+          <input type="number" id="reservation-room-id" name="reservation-room-id" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-employee-id">Employee ID:</label>
+          <input type="number" id="reservation-employee-id" name="reservation-employee-id" required>
+        </div>
+        <br />
+        <br>
+        <button type="submit">Create</button>
+      </form>
+    </section>
+
+    <script src="../js/addReservation.js"></script>
+  </body>
+</html>

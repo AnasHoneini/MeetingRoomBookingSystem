@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>SpaceReserve - Delete Reservations</title>
+    <link rel="stylesheet" type="text/css" href="../css/deleteReservation.css"/>
+    <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+    />
+</head>
+<body>
+<header class="banner">
+    <nav class="navigation" id="panelOne">
+        <a href="./getReservation.html"><span id="home">Get Reservations</span></a>
+        <a href="./addReservation.html"><span id="about">Add Reservations</span></a>
+        <a href="./updateReservation.html"><span id="gallery">Update Reservations</span></a>
+        <a href="./deleteReservation.html"><span id="review">Delete Reservations</span></a>
+        <a href="./reservationDashboard.html"><span id="contact">Dashboard</span></a>
+    </nav>
+</header>
+<section>
+    <br/>
+    <h2>Delete Reservation</h2>
+    <br/>
+    <form id="delete-reservation-form">
+        <div class="form-group">
+            <label for="reservation-id">Reservation ID:</label>
+            <input type="text" id="reservation-id" name="reservation-id" required>
+        </div>
+        <br>
+        <button type="submit">Delete</button>
+    </form>
+</section>
+<script src="../js/deleteReservation.js"></script>
+</body>
+</html>

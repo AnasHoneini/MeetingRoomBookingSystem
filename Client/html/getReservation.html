@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpaceReserve</title>
+    <link rel="stylesheet" type="text/css" href="../css/getReservation.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="banner">
+      <nav class="navigation" id="panelOne">
+        <a href="./getReservation.html"><span id="home">Get Reservations</span></a>
+        <a href="./addReservation.html"><span id="about">Add Reservations</span></a>
+        <a href="./updateReservation.html">
+          <span id="gallery">Update Reservations</span>
+        </a>
+        <a href="./deleteReservation.html"><span id="review">Delete Reservations</span></a>
+        <a href="./reservationDashboard.html">
+          <span id="contact">Dashboard</span>
+        </a>
+      </nav>
+    </header>
+    <section>
+      <br />
+
+      <button id="fetch-reservations">Fetch Reservations</button>
+
+      <table id="reservation-table">
+        <thead>
+            <tr id="table-row">
+                <th id="col-1">Reservation ID</th>
+                <th id="col-2">Name</th>
+                <th id="col-3">Date</th>
+                <th id="col-4">Start Time</th>
+                <th id="col-5">End Time</th>
+                <th id="col-6">Attendees</th>
+                <th id="col-7">Status</th>
+                <th id="col-8">Room ID</th>
+                <th id="col-9">Employee ID</th>
+              </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <script src="../js/getReservation.js"></script>
+  </body>
+</html>
